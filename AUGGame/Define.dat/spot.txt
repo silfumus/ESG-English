@@ -1,0 +1,1433 @@
+//
+
+//
+//
+//
+//
+//
+
+//
+
+#base_path "../Map"
+
+//
+//
+//
+//
+
+//
+map_group id="ジパング"
+
+map_group id="東アジア"
+map_group id="USA_東アジア"
+map_group id="EU_東アジア"
+map_group id="BRI_東アジア"
+map_group id="USA_大華帝国"
+map_group id="EU_大華帝国"
+map_group id="BRI_大華帝国"
+map_group id="EU_モンゴル"
+map_group id="BRI_モンゴル"
+map_group id="インド"
+map_group id="USA_インド"
+map_group id="EU_インド"
+map_group id="BRI_インド"
+
+map_group id="馬蒙連合"
+//
+map_group id="新大陸連合"
+
+map_group id="太平洋"
+map_group id="USA_太平洋"
+map_group id="EU_太平洋"
+map_group id="BRI_太平洋"
+map_group id="南洋"
+map_group id="USA_南洋"
+map_group id="EU_南洋"
+map_group id="BRI_南洋"
+map_group id="豪州"
+map_group id="USA_豪州"
+map_group id="EU_豪州"
+map_group id="BRI_豪州"
+
+map_group id="中東"
+map_group id="USA_中東"
+map_group id="EU_中東"
+map_group id="BRI_中東"
+map_group id="エジプト"
+map_group id="エジプト２"
+map_group id="マケドニア"
+map_group id="EU_マケドニア"
+map_group id="BRI_マケドニア"
+
+map_group id="ブリタニア"
+map_group id="USA_ブリタニア"
+map_group id="EU_ブリタニア"
+map_group id="BRI_ブリタニア"
+map_group id="欧州"
+map_group id="USA_欧州"
+map_group id="EU_欧州"
+map_group id="BRI_欧州"
+map_group id="欧州１"
+map_group id="USA_欧州２"
+map_group id="EU_欧州２"
+map_group id="BRI_欧州２"
+map_group id="USA_欧州３"
+map_group id="EU_欧州３"
+map_group id="EU_欧州４"
+map_group id="BRI_欧州３"
+
+map_group id="暗黒領域"
+map_group id="USA_暗黒領域"
+map_group id="EU_暗黒領域"
+map_group id="BRI_暗黒領域"
+
+map_group id="北土"
+map_group id="BRI_北土"
+
+map_group id="北米"
+map_group id="USA_北米１"
+map_group id="EU_北米１"
+map_group id="BRI_北米１"
+map_group id="北米２"
+map_group id="USA_北米３"
+map_group id="EU_北米３"
+map_group id="BRI_北米３"
+map_group id="ヴィンランド"
+map_group id="南米"
+map_group id="USA_南米"
+map_group id="EU_南米"
+map_group id="EU_南米２"
+map_group id="BRI_南米"
+map_group id="USA_南米_大西洋"
+map_group id="EU_南米_大西洋"
+map_group id="BRI_南米_大西洋"
+
+
+
+
+
+map_group id="幻想都市"
+map_group id="ムー大陸"
+
+
+
+map_group id="隠し_竜宮"
+map_group id="隠し_シャンバラ"
+map_group id="隠し_クマリナドゥ"
+map_group id="隠し_アアル"
+map_group id="隠し_シュオル"
+map_group id="隠し_キーテジ"
+map_group id="隠し_カイマクル"
+map_group id="隠し_ポホヨラ"
+map_group id="隠し_イース"
+map_group id="隠し_アトランティス"
+map_group id="隠し_マグ・メル"
+map_group id="隠し_エル・ドラードゲート"
+map_group id="隠し_ヒラニプラ"
+map_group id="隠し_アヴァロン"
+
+
+//
+//
+//
+#base_instruction spot 種類="都市", 可視=true
+
+//
+#base_instruction spot グループ="ジパング", 地域="アジア"
+
+spot id="仙台"
+	, 名前="Sendai", 種類="首都", 背景="仙台"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1858, y=619
+
+spot id="邪馬台"
+	, 名前="Yamato", 背景="邪馬台"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1735, y=720
+
+spot id="京都"
+	, 名前="Kyoto", 背景="京都"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1803, y=695
+
+spot id="江戸"
+	, 名前="Edo", 背景="江戸"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1872, y=681
+
+
+//
+#base_instruction spot グループ="東アジア", 地域="アジア"
+
+spot id="北京"
+	, 名前="Beijing", 背景="香港"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1642, y=566
+
+spot id="香港"
+	, 名前="Hong Kong", 背景="香港"
+	, シンボル=@CSpotSymbol_ブリタニア侵略(image=Path("SpotCity/[ID].png"))
+	, x=1571, y=865
+
+spot id="岳陽"
+	, 名前="Yueyang", 背景="汎用大華"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1532, y=754
+
+spot id="上海"
+	, 名前="Shanghai", 背景="香港"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1662, y=732
+
+spot id="成都"
+	, 名前="Chengdu", 背景="汎用大華"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1429, y=718
+
+spot id="長安"
+	, 名前="Changan", 背景="長安"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1523, y=667
+
+spot id="拉薩"
+	, 名前="Lhasa", 背景="汎用大華"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1307, y=694
+
+spot id="敦煌"
+	, 名前="Dunhuang", 背景="汎用大華"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1406, y=569
+
+spot id="楼蘭"
+	, 名前="Loulan", 背景="汎用大華"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1287, y=516
+
+//
+#base_instruction spot グループ="東アジア", 地域="アジア"
+
+spot id="ザナドゥ"
+	, 名前="Xanadu", 背景="汎用モンゴル"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1639, y=475
+
+spot id="ウランバートル"
+	, 名前="Ulaanbaatar", 背景="汎用モンゴル"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1501, y=468
+
+spot id="カラコルム"
+	, 名前="Qaraqorum", 背景="汎用モンゴル"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1383, y=487
+
+spot id="アルマリク"
+	, 名前="Almalik", 背景="汎用モンゴル"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1214, y=462
+
+spot id="カシュガル"
+	, 名前="Kashgar", 背景="ウルゲンチ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1136, y=612
+
+spot id="サマルカンド"
+	, 名前="Samarkand", 背景="ウルゲンチ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1063, y=621
+
+spot id="ウルゲンチ"
+	, 名前="Urganch", 背景="ウルゲンチ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1032, y=547
+
+//
+#base_instruction spot グループ="インド", 地域="アジア"
+
+spot id="カルカッタ"
+	, 名前="Calcutta", 背景="汎用インド"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1304, y=853
+
+spot id="セイロン"
+	, 名前="Ceylon", 背景="汎用インド"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1184, y=1072
+
+spot id="ムンバイ"
+	, 名前="Mumbai", 背景="汎用インド"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1091, y=914
+
+spot id="デリー"
+	, 名前="Delhi", 背景="汎用インド"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1146, y=779
+
+spot id="ガンダーラ"
+	, 名前="Gandhara", 背景="ガンダーラ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1049, y=726
+
+//
+#base_instruction spot グループ="南洋", 地域="南洋"
+
+spot id="アユタヤ"
+	, 名前="Ayutthaya", 背景="汎用東南アジア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1366, y=910
+
+spot id="サイゴン"
+	, 名前="Saigon", 背景="汎用東南アジア"
+	, シンボル=@CSpotSymbol_ブリタニア侵略(image=Path("SpotCity/[ID].png"))
+	, x=1484, y=967
+
+spot id="シンガポール"
+	, 名前="Singapore", 背景="汎用ブリタニア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1404, y=1143
+
+spot id="ジャカルタ"
+	, 名前="Jakarta", 背景="汎用東南アジア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1405, y=1204
+
+spot id="バリ"
+	, 名前="Bali", 背景="汎用南国" //
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1495, y=1231
+
+spot id="ブルネイ"
+	, 名前="Brunei", 背景="汎用東南アジア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1574, y=1081
+
+spot id="マニラ"
+	, 名前="Manila", 背景="汎用東南アジア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1620, y=960
+
+spot id="セブ"
+	, 名前="Cebu", 背景="汎用南国" //
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1671, y=1013
+
+spot id="グァム"
+	, 名前="Guam", 背景="汎用南国" //
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1855, y=968
+
+spot id="ポートモレスビー"
+	, 名前="Port Moresby", 背景="汎用東南アジア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1872, y=1248
+
+//
+#base_instruction spot グループ="豪州", 地域="豪州"
+
+spot id="パース"
+	, 名前="Perth", 背景="汎用オーストラリア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1488, y=1435
+
+spot id="ダーウィン"
+	, 名前="Darwin", 背景="汎用オーストラリア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1668, y=1237
+
+spot id="アリススプリングス"
+	, 名前="Alice Springs", 背景="汎用オーストラリア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1702, y=1371
+
+spot id="ブリスベン"
+	, 名前="Brisbane", 背景="汎用オーストラリア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1872, y=1426
+
+spot id="シドニー"
+	, 名前="Sydney", 背景="汎用オーストラリア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1837, y=1501
+
+spot id="メルボルン"
+	, 名前="Melbourne", 背景="汎用オーストラリア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1779, y=1552
+
+//
+#base_instruction spot グループ="太平洋", 地域="南洋"
+
+spot id="ハワイ"
+	, 名前="Hawaii", 背景="ハワイ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2192, y=783
+
+spot id="タヒチ"
+	, 名前="Tahiti", 背景="汎用南国"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2225, y=1358
+
+spot id="アオテアロア"
+	, 名前="Aotearoa", 背景="汎用南国"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2101, y=1569
+
+
+//
+#base_instruction spot グループ="北米", 地域="北米"
+
+spot id="アンカレジ"
+	, 名前="Anchorage", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2279, y=286
+
+spot id="バンクーバー"
+	, 名前="Vancouver", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2436, y=466
+
+spot id="エドモントン"
+	, 名前="Edmonton", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2648, y=431
+
+spot id="イエローナイフ"
+	, 名前="Yellowknife", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2731, y=241
+
+//
+//
+//
+//
+//
+//
+spot id="ニューヨーク"
+	, 名前="New York", 背景="ニューヨーク"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=3003, y=544
+
+spot id="シカゴ"
+	, 名前="Chicago", 背景="汎用ＵＳＡ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2897, y=521
+
+spot id="カンザスシティ"
+	, 名前="Kansas City", 背景="汎用ＵＳＡ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2753, y=535
+
+spot id="セントルイス"
+	, 名前="St・Louis", 背景="汎用ＵＳＡ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2830, y=573
+
+spot id="ペンサコーラ"
+	, 名前="Pensacola", 背景="汎用ヴィンランド"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2804, y=661
+
+spot id="ダラス"
+	, 名前="Dallas", 背景="汎用ＵＳＡ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2737, y=633
+
+spot id="ソルトレイクシティ"
+	, 名前="Salt Lake City", 背景="汎用インディアス"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2573, y=544
+
+spot id="サンフランシスコ"
+	, 名前="San Francisco", 背景="汎用インディアス"
+	, シンボル=@CSpotSymbol_ブリタニア侵略(image=Path("SpotCity/[ID].png"))
+	, x=2457, y=597
+
+spot id="チワワ"
+	, 名前="Chiwuawua", 背景="汎用インディアス"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2601, y=670
+
+spot id="フォートサムナー"
+	, 名前="Fort Sumner", 背景="汎用インディアス"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2642, y=601
+
+//
+#base_instruction spot グループ="ヴィンランド", 地域="北米"
+
+spot id="ハバナ"
+	, 名前="Havana", 背景="汎用ヴィンランド"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2840, y=739
+
+spot id="サントドミンゴ"
+	, 名前="Santo Domingo", 背景="汎用ヴィンランド"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2990, y=788
+
+spot id="ポートロイヤル"
+	, 名前="Port Royal", 背景="ポートロイヤル"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2889, y=815
+
+//
+#base_instruction spot グループ="南米", 地域="北米"
+
+spot id="テオティワカン"
+	, 名前="Teotihuacan", 背景="テノチティトラン"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2627, y=736
+
+spot id="ウシュマル"
+	, 名前="Uxmal", 背景="テノチティトラン"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2761, y=730
+
+spot id="テノチティトラン"
+	, 名前="Tenochtitlan", 背景="テノチティトラン"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2667, y=790
+
+spot id="パナマ"
+	, 名前="Panama", 背景="テノチティトラン"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2789, y=890
+
+//
+#base_instruction spot グループ="南米", 地域="南米"
+
+spot id="キト"
+	, 名前="Quito", 背景="汎用南米"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2780, y=987
+
+spot id="カハマルカ"
+	, 名前="Cajamarca", 背景="クスコ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2736, y=1089
+
+spot id="マチュピチュ"
+	, 名前="Machu Picchu", 背景="クスコ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2773, y=1157
+
+spot id="クスコ"
+	, 名前="Cuzco", 背景="クスコ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=2860, y=1199
+
+spot id="バルパライソ"
+	, 名前="Valparaiso", 背景="汎用南米"
+	, シンボル=@CSpotSymbol_ブリタニア侵略(image=Path("SpotCity/[ID].png"))
+	, x=2842, y=1413
+
+spot id="ブエノスアイレス"
+	, 名前="Buenos Aires", 背景="汎用南米"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=3044, y=1384
+
+spot id="リオデジャネイロ"
+	, 名前="Rio de Janeiro", 背景="汎用南米"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=3213, y=1211
+
+//
+#base_instruction spot グループ="中東", 地域="中東"
+
+spot id="ペルセポリス"
+	, 名前="Persepolis", 背景="汎用マケドニア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=938, y=704
+
+spot id="バグダード"
+	, 名前="Bagdad", 背景="汎用マケドニア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=880, y=647
+
+spot id="ダマスカス"
+	, 名前="Damascus", 背景="汎用マケドニア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=765, y=690
+
+spot id="ゴルディオン"
+	, 名前="Gordion", 背景="汎用マケドニア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=786, y=577
+
+spot id="アレキサンドリア"
+	, 名前="Alexandria", 背景="アレキサンドリア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=645, y=707
+
+spot id="バビロン"
+	, 名前="Babylon", 背景="汎用古代"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=848, y=721
+
+spot id="バベル"
+	, 名前="Babel", 背景="バベル"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=933, y=827
+
+spot id="ウルク"
+	, 名前="Uruk", 背景="汎用古代"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=808, y=782
+
+//
+#base_instruction spot グループ="中東", 地域="アフリカ"
+
+spot id="カイロ"
+	, 名前="Cairo", 背景="汎用エジプト"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=638, y=769
+
+spot id="テーベ"
+	, 名前="Thebes", 背景="汎用エジプト"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=696, y=807
+
+spot id="アブシンベル"
+	, 名前="Abu Simbel", 背景="アブシンベル"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=570, y=845
+
+//
+#base_instruction spot グループ="暗黒領域", 地域="アフリカ"
+
+spot id="ナイロビ"
+	, 名前="Nairobi", 背景="汎用暗黒"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=776, y=1067
+
+spot id="ンジャメナ"
+	, 名前="N djamena", 背景="汎用暗黒"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=490, y=983
+
+spot id="トンブクトゥ"
+	, 名前="Timbuktu", 背景="汎用暗黒"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=269, y=854
+
+spot id="コンゴ"
+	, 名前="Congo", 背景="汎用暗黒"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=603, y=1088
+
+spot id="アンゴーラ"
+	, 名前="Angola", 背景="汎用暗黒"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=483, y=1182
+
+spot id="ザンビア"
+	, 名前="Zambia", 背景="汎用暗黒"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=632, y=1252
+
+spot id="グレートジンバブエ"
+	, 名前="Great-Zimbabwe", 背景="汎用暗黒"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=661, y=1325
+
+spot id="ヨハネスブルグ"
+	, 名前="Johannesburg", 背景="ヨハネスブルグ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=607, y=1408
+
+spot id="ケープタウン"
+	, 名前="Capetown", 背景="汎用暗黒"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=533, y=1493
+
+//
+#base_instruction spot グループ="北土", 地域="北土"
+
+spot id="カムチャッキー"
+	, 名前="Kamchatsky", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1983, y=402
+
+spot id="ウラジオストック"
+	, 名前="Vladivostok", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1788, y=548
+
+spot id="ヤクーツク"
+	, 名前="Yakutsk", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1699, y=284
+
+spot id="イルクーツク"
+	, 名前="Irkutsk", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=1481, y=399
+
+spot id="モスクワ"
+	, 名前="Moscow", 背景="モスクワ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=780, y=328
+
+spot id="サンクトペテルブルク"
+	, 名前="St.Petersburg", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=727, y=222
+
+//
+#base_instruction spot グループ="欧州", 地域="欧州"
+
+spot id="ヘルシンキ"
+	, 名前="Helsinki", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=676, y=193
+
+spot id="ストックホルム"
+	, 名前="Stockholm", 背景="汎用ロシア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=588, y=212
+
+spot id="アテネ"
+	, 名前="Athens", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=611, y=605
+
+spot id="コンスタンティノープル"
+	, 名前="Constantinople", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=684, y=553
+
+spot id="トランシルヴァニア"
+	, 名前="Transylvania", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=666, y=473
+
+spot id="ワルシャワ"
+	, 名前="Warszawa", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=647, y=315
+
+spot id="ベルリン"
+	, 名前="Berlin", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=557, y=280
+
+spot id="ウィーン"
+	, 名前="Vienna", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=586, y=425
+
+spot id="ヴェネツィア"
+	, 名前="Venice", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=528, y=489
+
+spot id="ローマ"
+	, 名前="Rome", 背景="ローマ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=506, y=570
+
+spot id="カルタゴ"
+	, 名前="Carthage", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=440, y=632
+
+spot id="バルセロナ"
+	, 名前="Barcelona", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=369, y=530
+
+spot id="パリ"
+	, 名前="Paris", 背景="パリ"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=360, y=382
+
+spot id="ブリュッセル"
+	, 名前="Brussels", 背景="ブリュッセル"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=443, y=278
+
+spot id="リスボン"
+	, 名前="Lisbon", 背景="汎用欧州"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=241, y=502
+
+//
+#base_instruction spot グループ="ブリタニア", 地域="欧州"
+
+spot id="ロンドン"
+	, 名前="London", 背景="汎用ブリタニア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=370, y=259
+
+spot id="キャメロット"
+	, 名前="Camelot", 背景="汎用ブリタニア"
+	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
+	, x=313, y=302
+
+//
+//
+//
+//
+#base_instruction spot 種類="探索", グループ="", 地域="アジア", 可視=false
+
+//
+#base_instruction spot 地域="アジア"
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+#base_instruction spot 地域="アジア"
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+spot id="タクラマカン砂漠"
+	, 名前="Taklamakan Desert", ルビ="タクラマカン砂漠(さばく)", 背景="探索砂漠"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=1247, y=611
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+#base_instruction spot 地域="南洋"
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+spot id="エロマンガ島"
+	, 名前="Erromanga Island", ルビ="エロマンガ島(とう)", 背景="汎用南国"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=2050, y=1347
+
+spot id="ガラパゴス諸島"
+	, 名前="Galapagos Islands", ルビ="ガラパゴス諸島(しょとう)", 背景="汎用南国"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=2655, y=1028
+
+//
+//
+//
+//
+
+//
+#base_instruction spot 地域="豪州"
+
+spot id="グレートバリアリーフ"
+	, 名前="Great Barrier Reef", 背景="探索海辺"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=1873, y=1330
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+spot id="エアーズロック"
+	, 名前="Ayers Rock", 背景="探索荒地"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=1656, y=1374
+
+//
+#base_instruction spot 地域="北土"
+
+spot id="ツングースカ"
+	, 名前="Tunguska", 背景="探索荒地"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=1446, y=313
+
+//
+//
+//
+//
+
+//
+#base_instruction spot 地域="中東"
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+spot id="バビロンの空中庭園"
+	, 名前="Hanging Gardens of Babylon", 背景="バベル"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=892, y=697
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+#base_instruction spot 地域="アフリカ"
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+spot id="ナイル川"
+	, 名前="The Nile", 背景="汎用エジプト"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=678, y=810
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+#base_instruction spot 地域="欧州"
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+spot id="アルプス山脈"
+	, 名前="Alps", 背景="探索岩山"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=487, y=456
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+#base_instruction spot 地域="北米"
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+spot id="ロッキー山脈"
+	, 名前="Rocky Mountains", 背景="探索岩山"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=2558, y=451
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+spot id="グレートブルーホール"
+	, 名前="Great Blue Hole", 背景="探索海明"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=2853, y=787
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+#base_instruction spot 地域="南米"
+
+spot id="アンデス山脈"
+	, 名前="Andes", 背景="探索山"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=2904, y=937
+
+//
+//
+//
+//
+
+spot id="アマゾン川"
+	, 名前="Amazon River", 背景="汎用南米"
+	, シンボル=@CSpotSymbol(image=Path("SpotQuest/[ID].png"))
+	, x=3132, y=1004
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
+
+
+//
+#base_instruction spot グループ="隠し_竜宮", 地域="アジア", 可視=false
+
+spot id="ニライカナイ"
+	, 名前="Nilai Kanai", 背景="汎用海底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=1851, y=805
+
+spot id="ワクワク"
+	, 名前="Wakuwaku", 背景="汎用海底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=1983, y=734
+
+spot id="竜宮"
+	, 名前="Sea palace", 背景="汎用海底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=1997, y=668
+
+
+#base_instruction spot グループ="隠し_シャンバラ", 地域="アジア", 可視=false
+
+spot id="キシュキンダー"
+	, 名前="Kishkindha", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=1109, y=464
+
+spot id="崑崙"
+	, 名前="Kunlun", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/[ID].png"))
+	, x=950, y=478
+
+spot id="シャンバラ"
+	, 名前="Shambala", 背景="汎用地底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/[ID].png"))
+	, x=883, y=582
+
+
+#base_instruction spot グループ="", 地域="アジア", 可視=false
+
+spot id="ドワール・カー"
+	, 名前="Dwarka", 背景="汎用海底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=1022, y=946
+
+spot id="ポタラカ"
+	, 名前="Potalaka", 背景="汎用海底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=1132, y=1233
+
+spot id="クマリナドゥ"
+	, 名前="Kumari Kandam", 背景="汎用海底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=1067, y=1391
+
+
+#base_instruction spot グループ="隠し_アアル", 地域="アフリカ", 可視=false
+
+spot id="アビュドス"
+	, 名前="Abydos", 背景="汎用地底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=690, y=919
+
+spot id="アアル"
+	, 名前="Aaru", 背景="汎用地底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=876, y=991
+
+#base_instruction spot グループ="隠し_シュオル", 地域="アフリカ", 可視=false
+
+spot id="トロイ"
+	, 名前="Troy", 背景="探索遺跡"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=656, y=658
+
+spot id="アルカディア"
+	, 名前="Arcadia", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/[ID].png"))
+	, x=530, y=685
+
+spot id="シュオル"
+	, 名前="Sheol", 背景="汎用地底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=492, y=846
+
+
+#base_instruction spot グループ="隠し_キーテジ", 地域="北土", 可視=false
+
+spot id="コシチェイの村"
+	, 名前="Kashchei Village", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=1020, y=243
+
+spot id="キーテジ"
+	, 名前="Kitezh", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=1170, y=160
+
+
+#base_instruction spot グループ="隠し_カイマクル", 地域="中東"
+
+spot id="カイマクル"
+	, 名前="Kaymakli", 背景="汎用地底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=842, y=526
+
+
+#base_instruction spot グループ="", 地域="欧州"
+
+spot id="ヒュペルボレイオス"
+	, 名前="Hyperboreios", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=569, y=166
+
+spot id="ヴァルハラ"
+	, 名前="Valhalla", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/[ID].png"))
+	, x=715, y=105
+
+#base_instruction spot グループ="隠し_ポホヨラ", 地域="欧州"
+
+spot id="ポホヨラ"
+	, 名前="Pohjola", 背景="汎用地底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=859, y=138
+
+
+#base_instruction spot グループ="隠し_イース", 地域="欧州"
+
+spot id="カタコンベ"
+	, 名前="Catacombs", 背景="汎用地底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=387, y=466
+
+spot id="イース"
+	, 名前="Is", 背景="汎用海底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=303, y=414
+
+
+#base_instruction spot グループ="", 地域="北米", 可視=false
+
+spot id="エリュシオン"
+	, 名前="Elysion", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/[ID].png"))
+	, x=3167, y=760
+
+spot id="アトランティス"
+	, 名前="Atlantis", 背景="汎用海底"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/[ID].png"))
+	, x=3233, y=605
+
+spot id="トゥーレ"
+	, 名前="Tile", 背景="探索海辺"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=3226, y=248
+
+spot id="ティル・ナ・ノーグ"
+	, 名前="Tir na nog", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/[ID].png"))
+	, x=3324, y=248
+
+spot id="マグ・メル"
+	, 名前="Mag Mell", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/[ID].png"))
+	, x=3384, y=339
+
+//
+#base_instruction spot グループ="隠し_ヒラニプラ", 地域="ムー", 可視=false
+
+spot id="エル・ドラードゲート"
+	, 名前="El Dorado gate", 背景="汎用幻想" //
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/[ID].png"))
+	, x=2953, y=1077
+
+spot id="エル・ドラード"
+	, 名前="El Dorado", 背景="汎用ムー"
+	, シンボル=@CSpotSymbol_ムー(image=Path("SpotCity/[ID].png"))
+	, x=2297, y=1173
+
+spot id="ラピュータ"
+	, 名前="Laputa", 背景="汎用ムー"
+	, シンボル=@CSpotSymbol_ムー(image=Path("SpotCity/[ID].png"))
+	, x=2409, y=1124
+
+spot id="ホウライ"
+	, 名前="Horai", 背景="汎用ムー"
+	, シンボル=@CSpotSymbol_ムー(image=Path("SpotCity/[ID].png"))
+	, x=2421, y=973
+
+spot id="カナン"
+	, 名前="Canaan", 背景="汎用ムー"
+	, シンボル=@CSpotSymbol_ムー(image=Path("SpotCity/[ID].png"))
+	, x=2301, y=899
+
+spot id="エデン"
+	, 名前="Eden", 背景="汎用ムー"
+	, シンボル=@CSpotSymbol_ムー(image=Path("SpotCity/[ID].png"))
+	, x=2162, y=955
+
+spot id="ヒラニプラ"
+	, 名前="Hiranipura", 背景="汎用ムー"
+	, シンボル=@CSpotSymbol_ムー(image=Path("SpotCity/[ID].png"))
+	, x=2288, y=1034
+
+
+
+//
+#base_instruction spot グループ="", 地域="幻想", 可視=false
+
+spot id="エルピス_ＵＳＡ"
+	, 名前="Elpis", 種類="首都", 背景="水晶洞窟"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotQuest/水晶洞窟.png"))
+	, x=2667, y=507
+/*
+spot id="エルピス_ブリタニア"
+	, 名前="Elpis Brittania", 種類="首都", 背景="汎用ムー"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/ヒラニプラ.png"))
+	, x=2300, y=600
+
+spot id="エルピス_ＥＵ"
+	, 名前="Elpis EU", 種類="首都", 背景="汎用ムー"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/ヒラニプラ.png"))
+	, x=2300, y=800
+*/
+
+#base_instruction spot グループ="隠し_アヴァロン", 地域="幻想", 可視=false
+
+spot id="アヴァロン"
+	, 名前="Avalon", 背景="汎用幻想"
+	, シンボル=@CSpotSymbol_キラキラ(image=Path("SpotCity/[ID].png"))
+	, x=201, y=251
+
+//
+//
+//
+//
+
+//
+//
+//
+//
+
