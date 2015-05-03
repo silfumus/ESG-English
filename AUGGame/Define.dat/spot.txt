@@ -141,7 +141,7 @@ spot id="仙台"
 	, x=1858, y=619
 
 spot id="邪馬台"
-	, 名前="Yamato", 背景="邪馬台"
+	, 名前="Yamatai", 背景="邪馬台"
 	, シンボル=@CSpotSymbol(image=Path("SpotCity/[ID].png"))
 	, x=1735, y=720
 

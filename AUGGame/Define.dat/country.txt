@@ -48,7 +48,7 @@ country id="ジパング_奥州", 名前="Oushou", 関係="自国", 活動=true
 	, 首都="仙台", x=-910, y=-240
 	, 国ターン演出=Value(@標準ターン演出())
 
-country id="ジパング_邪馬台", 名前="Yamadai", 関係="緊張", 活動=true
+country id="ジパング_邪馬台", 名前="Yamatai", 関係="緊張", 活動=true
 	, 戦闘="アジア戦"
 	, 首都="邪馬台", x=-781, y=-338
 	, 国ターン演出=Value(@標準ターン演出())
@@ -155,7 +155,7 @@ country id="マケドニア・モンゴル連合", 名前="Macedonia Mongolia Union"
 	, 首都="アレキサンドリア", x=220, y=-330
 	, 国ターン演出=Value(@標準ターン演出())
 
-country id="バビロニア", 名前="Babilonia"
+country id="バビロニア", 名前="Babylonia"
 	, 戦闘="中東戦"
 	, 首都="バビロン", x=128, y=-352
 	, 国ターン演出=Value(@標準ターン演出())
@@ -232,12 +232,12 @@ country id="ブリタニア", 名前="Britannia"
 	, 首都="キャメロット", x=650, y=0
 	, 国ターン演出=Value(@標準ターン演出())
 
-country id="テンプル騎士団", 名前="Temple Knights"
+country id="テンプル騎士団", 名前="Knights Templar"
 	, 戦闘="騎士団戦"
 	, 首都="", x=273, y=-232
 	, 国ターン演出=Value(@標準ターン演出())
 
-country id="ディンギルラ", 名前="Dingiru"
+country id="ディンギルラ", 名前="Dungeon Ruler"
 	, 戦闘="古代英雄戦"
 	, 首都="ヒラニプラ", x=-1325, y=-700
 	, 国ターン演出=Value(@標準ターン演出())
